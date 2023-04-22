@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from rl_bas.model import GaussianPolicy, QNetwork
-from rcbf_sac.utils import hard_update, soft_update, to_tensor
+from rl_bas.utils import hard_update, soft_update, to_tensor
 import numpy as np 
 
 # reference : https://spinningup.openai.com/en/latest/algorithms/sac.html

@@ -1,6 +1,6 @@
 import numpy as np
 from copy import deepcopy
-from rcbf_sac.utils import euler_to_mat_2d
+from rl_bas.utils import euler_to_mat_2d
 
 def generate_model_rollout(env, memory_model, memory, agent, model, Qbas, horizon, batch_size=20):
     obs_batch, action_batch, reward_batch, next_obs_batch, mask_batch, t_batch, next_t_batch, _, _ = memory.sample(batch_size=batch_size)
